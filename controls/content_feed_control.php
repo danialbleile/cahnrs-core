@@ -8,7 +8,7 @@ class content_feed_control {
 		//}
 	}
 	
-	public function get_form( $form = '', $widget , $val ){
+	/*public function get_form( $form = '', $widget , $val ){
 		switch( $form ){
 			case 'form_part_count':
 				include DIR.'inc/form_part_feed_count_inc.phtml';
@@ -41,7 +41,7 @@ class content_feed_control {
 				include DIR.'inc/basic_feed_form_inc.phtml';
 				break;
 		}
-	}
+	}*/
 	
 	public function get_query_args( $in ){
 		return $this->get_basic_query_args( $in );
@@ -52,6 +52,10 @@ class content_feed_control {
 		$query = array();
 		
 		$query['post_type'] = ( isset( $vals['post_type'] ) )? $vals['post_type'] : 'any';
+		
+		if( $vals['post_type'] == 'attachment' ){
+			$query['post_status'] = 'any';
+		}
 		
 		if( isset( $vals['order_by'] ) ) $query['orderby'] = $vals['order_by'];
 		
@@ -82,7 +86,6 @@ class content_feed_control {
 		}
 		
 		if( isset( $vals['skip'] ) ) $query['offset'] = $vals['skip'];
-		
 		return $query;
 	}
 	

@@ -6,4 +6,5 @@
 <file name="feed_control.php" server="ftp.wpdev.cahnrs.wsu.edu//public_html/" local="130517378782502359" remote="130495917600000000" Dst="2" />
 <file name="script_control.php" server="ftp.wpdev.cahnrs.wsu.edu//public_html/" local="130517378782532372" remote="130497343800000000" Dst="2" />
 <file name="widget_control.php" server="ftp.wpdev.cahnrs.wsu.edu//public_html/" local="130518143030319957" remote="130518142800000000" Dst="2" />
+<file name="content_feed_control.php" server="ftp.wpdev.cahnrs.wsu.edu//public_html/m1.wpdev.cahnrs.wsu.edu/wp-content/plugins/cahnrs-core/" local="130518412482745912" remote="130518412200000000" Dst="2" />
 </dwsync>

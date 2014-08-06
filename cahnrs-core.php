@@ -3,7 +3,7 @@
  * Plugin Name: CAHNRS Core
  * Plugin URI:  http://cahnrs.wsu.edu/communications/
  * Description: Core Features and Widgets for CAHNRS
- * Version:     0.1
+ * Version:     1.1
  * Author:      CAHNRS Communications, Danial Bleile
  * Author URI:  http://cahnrs.wsu.edu/communications/
  * License:     Copyright Washington State University
