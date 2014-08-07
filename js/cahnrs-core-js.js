@@ -50,5 +50,5 @@ var cahnrs_slideshow = function( sh ){
 		s.nv.on('click', 'a', function( event ){ event.preventDefault();});
 	}
 	
-	if( sh.hasClass('slideshow-basic')) s.init_basic();
+	if( sh.hasClass('slideshow-basic') && sh.find('.cahnrs-slide').length > 1 ) s.init_basic();
 }

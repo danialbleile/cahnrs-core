@@ -150,7 +150,7 @@ class CAHNRS_Slideshow_widget extends \WP_Widget {
 			</div></div>
             <?php if( 'slideshow-basic' == $instance['display'] && $query ){
 				$i = 0;
-				if ( $query->have_posts() ) {
+				if ( $query->have_posts() && $query->post_count > 1 ) {
 					echo '<div class="cahnrs-slide-nav">';
 					while ( $query->have_posts() ) {
 						$query->the_post();
