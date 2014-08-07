@@ -71,6 +71,11 @@ class content_view {
 				$view['type'] = 'promo';
 				$view['fields'] = array('title','link','excerpt','content','image');
 				break;
+			case 'full': // IF COLUMN PROMO DO THIS
+				$view['method'] = 'get_full_view';
+				$view['type'] = 'full';
+				$view['fields'] = array('content');
+				break;
 			case 'list':
 			default: // DEFAULT LIST VIEW
 				$view['method'] = 'get_basic_list_view';
@@ -237,6 +242,10 @@ class content_view {
                 </div>
             </div>
         </div><?php 
+	}
+	
+	public function get_full_view( $instance , $display_obj ){
+		echo $display_obj->content;
 	}
 	
 	public function get_azindex_view_full( $instance , $items ){
